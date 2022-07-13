@@ -1,0 +1,12 @@
+﻿
+@model List<StudentsModel>
+
+
+<p>Successful</p>
+
+@foreach(var obj in Model){
+
+	<h2>@obj.name</h2>
+	<h2>@obj.regno</h2>
+	<h2>@obj.branch</h2>
+}

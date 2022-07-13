@@ -1,0 +1,14 @@
+﻿@model MVCFirstApp.Models.StudentsModel
+
+ @Html.ActionLink("GetStudentDetails","getstudents","Student")
+
+ @using(Html.BeginForm("showstudents","Student")){
+	 <p>name</p>
+	 @Html.TextBoxFor(model => model.name )
+	 <p>regno</p>
+	 @Html.TextBoxFor(model => model.regno )
+	 <p>branch</p>
+	 @Html.TextBoxFor(model => model.branch)
+
+	 <button>Submit</button>
+ }

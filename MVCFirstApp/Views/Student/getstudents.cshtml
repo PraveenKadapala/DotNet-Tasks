@@ -1,0 +1,27 @@
+﻿
+@model List<StudentsModel>
+
+
+<table>
+	<tr>
+	<th>
+		name
+	</th>
+		<th>
+		regno
+	</th>
+	<th>
+		branch
+	</th>
+	</tr>
+
+@foreach(var obj in Model){
+	<tr>
+	<th>@obj.name</th>
+	<th>@obj.regno </th>
+	<th>@obj.branch</th>
+	</tr>
+}
+</table>
+
+

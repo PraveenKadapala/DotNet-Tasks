@@ -6,7 +6,7 @@ namespace MVCFirstApp.Controllers
     [Route("[Controller]")]
     public class StudentController : Controller
     {
-        [Route("Praveen")]
+        [Route("Home")]
         public IActionResult Index()
         {
             return View();
